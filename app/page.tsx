@@ -557,6 +557,70 @@ export default function Portfolio() {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="overflow-hidden w-full max-w-lg">
+              <div className="h-40 md:h-48 bg-teal-100 flex items-center justify-center">
+                <Image
+                  src="/myntra.png"
+                  alt="Data project"
+                  width={300}
+                  height={200}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <CardContent className="p-4 md:p-6">
+                <h3 className="font-semibold text-base md:text-lg mb-2">Myntra Automation</h3>
+                <p className="text-sm italic text-muted-foreground mb-3">
+                  Your automated gateway to the best deals on Myntra.
+                </p>
+                <p className="text-xs md:text-sm text-muted-foreground mb-4 leading-relaxed">
+                  While browsing Myntra during sales, I often found myself repeatedly applying filters and 
+                  comparing prices just to figure out which items had the best discounts. This manual process 
+                  was slow and frustrating, so I set out to automate it. Using Playwright and Cucumber BDD (Java), 
+                  I built a system that navigates Myntra like a real user, applies dynamic filters, and collects 
+                  only discounted products. The extracted items are then sorted by the highest savings, giving a clear 
+                  and organized view of the best deals. This project was created to turn a time-consuming hunt for discounts 
+                  into an effortless, automated experience.
+                </p>
+                <div className="flex flex-wrap gap-1.5 md:gap-2 mb-4">
+                  <Badge variant="outline" className="text-xs">
+                    Java
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    Playwright
+                  </Badge>
+                  <Badge variant="outline" className="text-xs">
+                    BDD
+                  </Badge>
+                </div>
+                <div className="flex gap-2">
+                  <Button variant="outline" size="sm" className="h-8 px-3 bg-transparent" asChild>
+                    <a
+                      href="https://github.com/Dev-Raam/Myntra-Automation"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <Github className="w-3 h-3" />
+                      <span className="text-xs">GitHub</span>
+                    </a>
+                  </Button>
+
+                  {/* Live Demo Button */}
+                    <Button variant="outline" size="sm" className="h-8 px-3 bg-transparent" asChild>
+                      <a
+                        href="https://your-live-site.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        <Globe className="w-3 h-3" />
+                        <span className="text-xs">Live Demo</span>
+                      </a>
+                    </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
